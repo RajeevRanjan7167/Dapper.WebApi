@@ -1,14 +1,10 @@
-npm install @auth0/angular-jwt
-npm install ngx-bootstrap --save
-npm install alertifyjs --save
-npm install bootswatch
-npm i --save ag-grid-community ag-grid-angular
-npm install --save ag-grid-enterprise
-npm i @angular/cdk
-npm i @angular/material
-npm upgrade ngx-bootstrap
-npm install ngx-bootstrap@2.0.5
-npm install ngx-bootstrap@5.5.0
-npm install time-ago-pipe --save
-@ng-select/ng-select
+<div fxFlex="100" fxFlex.gt-sm="33.33" fxFlex.sm="50" class="p-2">
+    <div class="upload" >
+        <button color="primary" mat-raised-button class="uploadButton" multiple>Browse</button>
+        <input type="file" (change)="onFileChange($event)" name="upload" id="fileControl" ng2FileSelect [uploader]="itemDocument" accept=".xlsx,.xls" />
+        <span class="fileName">
+            <span *ngIf="itemDocument?.queue?.length == 0">Select file..</span>
+        </span>
+    </div>
+</div>
 
