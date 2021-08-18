@@ -5,7 +5,7 @@ onFileChange(ev) {
     let workBook = null;
     let jsonData = null;
     const reader = new FileReader();
-    const file = ev.target.files;
+    const file = ev.target.files[0];
 
     debugger;
 
